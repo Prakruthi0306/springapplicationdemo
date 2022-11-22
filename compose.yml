@@ -1,0 +1,37 @@
+services:
+
+  app:
+    
+    depends_on:
+       - db
+    build: .
+    
+    
+    ports:
+      - "8089:8085"
+    restart: always
+    networks:
+      - spring-mysql
+   
+  db:
+    
+    image: mysql:8.0.27
+    
+    container_name: db
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=prakruthi
+      - MYSQL_USER=prakruthi
+      - MYSQL_PASSWORD=prakruthi
+    networks:
+      - spring-mysql  
+    ports:
+      - "3306:3306"  
+volumes:
+  db_data:
+networks:
+  spring-mysql:
+    
