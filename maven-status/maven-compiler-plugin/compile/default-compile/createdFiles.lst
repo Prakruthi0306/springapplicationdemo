@@ -1,0 +1,8 @@
+com\ashwin\accessingdatamysql\User.class
+com\ashwin\controller\GreetingController.class
+com\ashwin\SpringMysqlDemo.class
+com\ashwin\accessingdatamysql\Marks.class
+com\ashwin\accessingdatamysql\Details.class
+com\ashwin\accessingdatamysql\MarksRepository.class
+com\ashwin\accessingdatamysql\UserRepository.class
+com\ashwin\accessingdatamysql\DetailsRepository.class
